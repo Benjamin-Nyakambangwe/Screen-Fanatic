@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Movies, TV Shows| Celebrity News & Gossip | SCREEN FANATIC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" href="/static/favicon.ico" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5147e98a90","applicationID":"14563770","transactionName":"YFJTY0FVCkJWWkAIXlkYe15URwVGGHp2T1hZU1RPHQVUAQ==","queueTime":0,"applicationTime":29,"agent":""}</script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700,700i|Roboto+Condensed:300,400,400i,700,700i">
+    <link rel="canonical" href="https://www." />
+    <meta property="og:title" content="SCREEN FANATIC">
+    <meta property="og:image" content="">
+    <meta name="SCREEN FANATICS" content="001">
+    <meta name="page" content="index">
+    <meta name="description" content="SCREEN FANATIC is the best place for todays information and updates on new movies, tv shows and news on celebrity . Visit now to see whats new at the moment!">
+    <meta name="robots" content="all">
+    <meta property="og:url" content="https://www.">
+    <meta property="og:image:width" content="None">
+    <meta property="og:image:height" content="None">
+    <meta property="og:description" content="SCREEN FANATIC is the best place for todays information and updates on new movies, tv shows and news on celebrity . Visit now to see whats new at the moment!">
+    <meta property="og:site_name" content="SCREEN FANATIC">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coustard|Crete+Round|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="wrapper_header">
+          <!--<div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>-->
+          <div class="logo">
+            <h1><span class="highlight">S</span>CREEN <span style="color:#5bc0de">F</span>ANATIC</h1>
+          </div>
+          <div class="icons">
+
+            <a href="#"><img src="https://drive.google.com/uc?id=1r1qAsFvlQkNpaESZfNzkphw9g4gCOxFE" alt="" width="50px" height="50px"></a>
+            <a href="#"><img src="https://drive.google.com/uc?id=1Ou0nUc4THyG4kYUssZWZhpwxa7R1XpQ4" alt="" width="50px" height="50px"></a>
+            <a href="#"><img src="https://drive.google.com/uc?id=12Vl9WBoVz5j_P63eUIv4OV7b3kXJl4b8" alt="" width="50px" height="50px"></a>
+            <a href="#"><img src="https://drive.google.com/uc?id=1KUKkCU8d5bs6YjANn9ZOoQL2z4vwmXEq" alt="" width="50px" height="50px"></a>
+            <a href="#"><img src="https://drive.google.com/uc?id=1rRSJgLtmxWOQEvEBJSVqO55M8qb3kxJ1" alt="" width="50px" height="50px"></a>
+          
+          </div>
+          <div class="menu">
+            <ul>
+              <li class="current"><a href="#">HOME</a></li>
+              
+              <li><a href="maniac_trailers.html">TRAILERS</a></li>
+              <li><a href="review.html">REVIEW</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="showcasee">
+      <div class="wrapper">
+        <div class="box1">
+          <video width="100%" height="420px" src="https://drive.google.com/uc?id=1iXo4Kf8-Bf0EnGRl8_LZ4mZVeYC_olFT"  preload="none" controls poster="https://drive.google.com/uc?id=10eSNdRlQ9Ik4bJyRMFeGArxRIEIEbbKm">
+          </video>
+        </div>
+        <div class="box2">
+          <img src="" alt="" name="slide" width="300px" height="420px">
+        </div>
+    </section>
+
+    <article class="main">
+      <div class="containe">
+        <div class="wrapper_3">
+          <div class="art1">
+            <div class="blog_1">
+              <h2 class="text-center">LOOKING FORWARD TO ARROW SPINOFF</h2>
+              <img src="https://drive.google.com/uc?id=1zA83ToZ_6e9vZ5KHTNvnb2wAx7QiRy9U" width="100%" height="380px" alt="">
+              <p>The Arrow-verse's inaugural show is set to end after a shortened eighth season, but that doesn't necessarily mean all of Arrow's characters will be out of commission. Certain twists of Arrow Season 7 have prompted fans to wonder if a spinoff is in the works, with the future-set "Star City 2040" feeling an awful lot like a backdoor pilot.</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/looking_forward_to_arrow_spinoff.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+            <div class="blog_2">
+              <h2 class="text-center">DC REALLY KILLED IT WITH SHAZZAM</h2>
+              <img src="https://drive.google.com/uc?id=1WrUUulZY8ceYzqmWKnDIbxBuDQyLvHhx"  width="100%" height="380px" alt="">
+              <p>There have been some shining examples of ideal casting in the superhero genre over the years. Christopher Reeve as the original on-screen Superman. Hugh Jackman and his masterful run through the X-Men saga as Wolverine. And the bulk of the original Avengers, with an emphasis on Robert Downey Jr.’s Tony Stark and Chris Evans’ Steve Rogers. To that list, we now add Zachary Levi’s Billy Batson, a teenage boy who transforms into a mighty, bulky hero (cape and all) by shouting the magic word “Shazam!”</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/dc_really_killed_it_with_shazzam.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+            <div class="blog_3">
+              <h2 class="text-center">MICHAEL HEIRST(VIKINGS CREATOR) IS BRINGING ANOTHER EPIC TALE </h2>
+              <img src="https://drive.google.com/uc?id=17mYCMZAlQ_4agwYyeKXTYSSCZh2oMVVn"  width="100%" height="420px" alt="">
+              <p>Michael Hirst will be behind a new adaptation of Doctor Zhivago. Yes! Vikings’ creator will set sail on a whole new world. Hirst will adapt Boris Pasternak’s novel for television, per Deadline. While it is a tale that has made it to the screen many times before, there is a crucial difference. The man behind an epic saga like Vikings has not gotten his hands on it.</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/michael_heirst(vikings_creator)_is bringing_another_epic_tale.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+            <div class="blog_4">
+              <h2 class="text-center">RENEWED AND CANCELLED SHOWS ON NETFLIX</h2>
+              <img src="https://drive.google.com/uc?id=1NtUlmp4fxjAR-IUimPqbh0ELao7KFaa2"  width="100%" height="380px" alt="">
+             <p>Can you remember all the way back to the time when Netflix seemed like it might only ever make a few dozen original series, and that none of them would ever get cancelled? That hilariously antiquated viewpoint was extremely relevant all of three years ago, somehow. Currently, however, Netflix is among the biggest entertainment providers on the planet, and its library of exclusives expands by the week, just daring viewers to ignore the rest of the world in order to binge freely.</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/renewed_and_cancelled_shows_on_netflix.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+            <div class="blog_5">
+              <h2 class="text-center">US........... !!!!</h2>
+              <img src="https://drive.google.com/uc?id=1xQOoK27Ki3of9yS6SDfFQ_L98x64gjiM"  width="100%" height="380px" alt="">
+              <p>Adelaide Wilson (Lupita Nyong'o) and her husband Gabe (Winston Duke) have brought their two children Zora (Shahadi Wright Joseph) and Jason (Evan Alex) on vacation to the Santa Cruz mountains. Against the wishes of Adelaide, the family takes a day trip down the famous Santa Cruz Boardwalk to visit with friends (Elizabeth Moss and Tim Heidecker). Adelaide experienced a traumatic event on the same boardwalk as a child, and still hasn't quite come to terms with it. However, she's forced to deal with her past that night when a family of four, dark and twisted versions of Adelaide's own family appear at the end of the driveway with clearly murderous intentions.</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/us_review.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+            <div class="blog_6">
+              <h2 class="text-center">TOO BAD IDRIS ELBA WONT BE DEADSHOT</h2>
+              <img src="https://drive.google.com/uc?id=10P2a-0NJZGUS_fScNaGEP3GLz8_94ju2"  width="100%" height="360px" alt="">
+              <p>Last month, it was reported that due to scheduling issues, Will Smith wouldn’t reprise Floyd Lawton, a.k.a. Deadshot, in The Suicide Squad. Days later, word came in that Idris Elba had been tapped to replace Smith as the assassin, but apparently now plans have changed. Elba is still attached to the sequel, but he won’t be playing Deadshot.</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/too_bad_idris_elba_wont_be_deadshot.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+            <div class="blog_7">
+              <h2 class="text-center">SHOULD PARENTS BE WORRIED FOR THEIR KIDS WITH SHAZAM</h2>
+              <img src="https://drive.google.com/uc?id=1a2cJG79st9hOfXB2zNT998FQZmMZY1Lk"  width="100%" height="420px" alt="">
+              <p>For a long time, comic books were viewed as a medium geared toward kids, but the movies based on them certainly have not been. While most aren’t as mature as Deadpool or Logan, you probably still don’t want to take really little ones to watch their favorite heroes turn to dust in Avengers: Infinity War. That was mentally scarring even for some of the grown-ups.</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/should_parents_be_worried_for_their_kids_with_shazam.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+            <div class="blog_8">
+              <h2 class="text-center">RENEWED AND CANCELLED TV SHOWS 2019</h2>
+              <img src="https://drive.google.com/uc?id=1MP3oC5_tPN5SSZ6UkPlWVauOecMz2znG"  width="100%" height="360px" alt="">
+              <p>Find out what other shows are ending and which ones are set to return in Rotten Tomatoes&#8217; list of renewed and cancelled series below!</p>
+<p><strong>Latest update (4/4)</strong>: <a href="https://www.rottentomatoes.com/tv/the_umbrella_academy"><em>The Umbrella Academy</em></a>: season 2 (Netflix) &#8211; <span style="color: #00af10;">Renewed</span>;<strong> </strong><a href="https://www.rottentomatoes.com/tv/after_life"><em>After Life</em></a>: season 2 (Netflix) &#8211;<strong> </strong><span style="color: #00af10;"> Renewed </span>;<strong> </strong><a href="https://www.rottentomatoes.com/tv/better_things"><em>Better Things</em></a>: season 4 (FX) &#8211;<strong> </strong><span style="color: #00af10;">Renewed</span>; <a href="https://www.rottentomatoes.com/tv/boomerang/s01"><em>Boomerang</em></a>: Season 2 (BET) &#8211;<strong> </strong><span style="color: #00af10;">Renewed</span>; <a href="https://www.rottentomatoes.com/tv/american_soul/s01"><em>American Soul</em></a>: season 2 (BET) &#8211; <span style="color: #00af10;">Renewed</span>; <a href="https://www.rottentomatoes.com/tv/supernatural"><em>Supernatural</em></a>: season 15 (The CW) &#8211; <span style="color: #ff0000;">Cancelled <span style="color: #000000;">(after final 15th season); <a href="https://www.rottentomatoes.com/tv/schitts_creek"><em>Schitt&#8217;s Creek</em></a>: Season 6 (Pop) &#8211;<span style="color: #ff0000;"> Cancelled </span>(after sixth and final season); <em><a href="https://www.rottentomatoes.com/tv/high_maintenance">High Maintenance</a></em>: season 4 (HBO) &#8211; <span style="color: #00af10;">Renewed</span>; <a href="https://www.rottentomatoes.com/tv/tin_star"><em>Tin Star</em></a>: season 3 (Amazon) &#8211; <span style="color: #ff0000;">Cancelled</span> (after third and final season); <em><a href="https://www.rottentomatoes.com/tv/9_1_1/s01">9-1-1</a></em>: season 3 (Fox) &#8211; <span style="color: #00af10;">Renewed</span>; <a href="https://www.rottentomatoes.com/tv/the_resident/s01"><em>The Resident</em></a>: season 3 (Fox) &#8211; <span style="color: #00af10;">Renewed</span>; <em><a href="https://www.rottentomatoes.com/tv/marvel_s_runaways/s01">Marvel&#8217;s Runaways</a></em>: season 3 (Hulu) &#8211; <span style="color: #00af10;">Renewed</span>; <a href="https://www.rottentomatoes.com/tv/the_conners/s01"><em>The Conners</em></a>: season 2 (ABC) &#8211; <span style="color: #00af10;">Renewed</span>; </span></span><em><a href="https://www.rottentomatoes.com/tv/american_gods/s01">American Gods</a></em>: season 3 (Starz) &#8211; <span style="color: #00af10;">Renewed</span>; <a href="https://www.rottentomatoes.com/tv/one_day_at_a_time"><em>One Day at a Time</em></a>: season 3 (Netflix) &#8211; <span style="color: #ff0000;">Cancelled</span>; <i><a href="https://www.rottentomatoes.com/tv/smilf/s01">SMILF</a></i>: season 2 (Showtime) &#8211; <span style="color: #ff0000;">Cancelled</span>; <em><a href="https://www.rottentomatoes.com/tv/the_blacklist">The Blacklist</a></em>: season 7 (NBC) &#8211; <span style="color: #00af10;">Renewed</span>; <em><a href="https://www.rottentomatoes.com/tv/crashing">Crashing</a></em>: season 3 (HBO) &#8211; <span style="color: #ff0000;">Cancelled</span>; <a href="https://www.rottentomatoes.com/tv/arrow"><em>Arrow</em></a>: season 8 (The CW) &#8211; <span style="color: #ff0000;">Cancelled </span>(after eighth and final season).</p>
+              <div class="read_more_button">
+                <li  style="display: inline;"><a href="./blogs/renewed_and_cancelled_tv_shows_2019.html" class="btn btn-info btn-md"><strong>READ MORE</strong></a></li>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <h5 class="text-center">MOST POPULAR</h5>
+              <ul>
+                <li>DC really killed it with <span style="color:#5bc0de">SHAZAM</span></li>
+                <li>Too bad Idris Elba won't be <span style="color:#5bc0de">DEADSHOT</span></li>
+                <li>Renewed and Cancelled Tv Shows on <span style="color:#5bc0de">NETFLIX </span</li>
+                <li>Looking forward to <span style="color:#5bc0de">ARROW'S</span> spinoff</li>
+                <li>Should you be worried for their kids with <span style="color:#5bc0de">SHAZAM</span></li>
+              </ul>
+              <div class="blue_border"></div>
+            <h5 class="text-center">RECENT UPLOADS</h5>
+              <ul>
+                <li>Michael Heirst is bringing another epic tale </li>
+                <li>Renewed and Cancelled shows fo 2019 </li>
+                <li>US......... !!!! </li>
+              </ul>
+              <div class="blue_border"></div>
+            <h5 class="text-center">BEST OF THE WEEK ON TV</h5>
+              <ol>
+                <li>Game of Thrones</li>
+                <li>Into The Badlands <!--<img src="rotten_tomatoe.png" alt="" width="20px" height="25px">--> </li>
+                <li>American Gods <!--<img src="rotten_tomatoe.png" alt="" width="20px" height="25px">--></li>
+                <li>Crazy Ex Girlfriend </li>
+                <li>Bob's Burgers</li>
+                <li>Better Things</li>
+                <li>High Maintenance </li>
+                <li>You're The Worst</li>
+                <li>The MAgicians</li>
+                <li>Corporate </li>
+                
+              </ol>
+              <div class="blue_border"></div>
+            <h5 class="text-center">BEST OF THE WEEK IN CINEMA</h5>
+              <ol>
+                <li>Avengers EndGame</li>
+                <li>The Lego Movie 2 </li>
+                <li>Alita Battle Angel</li>
+                <li>The Boy Who Would Be a King </li>
+                <li>Captain Marvel </li>
+                <li>Shazam </li>
+                <li>Fighting with my Family </li>
+                <li>How To Train Your Dragon </li>
+                <li>Avengers EndGame</li>
+
+              </ol>
+              <div class="blue_border"></div>
+
+              <div class="ads">
+                <img src="https://drive.google.com/uc?id=1Na8XjIZDl7VUbiDYGFzJeHz0LveRTHOJ" alt="" width="75%">
+              </div>
+
+            <!--  <div class="subscribe">
+                <h2 class="text-center">GET THE LATEST SCOPE</h2>
+                <p class="text-center">subscribe and get the latest scope on movie maniacs</p>
+                <form class="text-center" action="index.html" method="post">
+                  <div class="form-group">
+                    <input  type="text" name="full_name" value="" placeholder="enter your name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" value="" placeholder="enter your email" class="form-control">
+                  </div>
+                  <button type="submit" class="container btn btn-info">SUBMIT</button><br>
+
+                </form>
+              </div>-->
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+  <div class="craft_ad " >
+    <img src="https://drive.google.com/uc?id=12SSLget8TlnkWLwcQCqTC7N73CTX4crR" alt="" style="float:center">
+  </div>
+
+
+    <footer>
+    <div class="wrapper_blog_footer container" >
+      <div class="">
+        <p>SCREEN FANATIC &copy2019<p>
+      </div>
+      <div class="last">
+        <p class="text-right">About Us   Privacy Policy</p>
+      </div>
+  </div>
+    </footer>
+
+    
+  </div>
+  <script type="text/javascript">
+
+    var i = 0; //start point
+    var images = [];
+    var time = 3000;
+
+    //image lists
+    images[0] = 'https://drive.google.com/uc?id=1FUs8X1cKNE4vXWd8tWXZbdbtiiWGdJ74';
+    images[1] = 'https://drive.google.com/uc?id=1uCWE7rLJUsfPfSl_sdH8qVu3UPaCsblb';
+    images[2] = 'https://drive.google.com/uc?id=1X9B-sqEVSsTVnZSvADFHbpGYV-ABF6x1';
+    images[3] = 'https://drive.google.com/uc?id=1v7Fg9wYeoTNnKnq2ycrapzu9ZeXyJhXI';
+    images[4] = 'https://drive.google.com/uc?id=1sN9HQmKqdCZqfQIR2Ndw-bHsFsUNz3O9';
+    images[5] = 'https://drive.google.com/uc?id=1SeIo6lI-jCZtI9BBltvmz7t8TkH4vSyV';
+    images[6] = 'https://drive.google.com/uc?id=1sgNZlgR_yyaNXk9oA57UOYdv00wMakPh';
+    images[7] = 'https://drive.google.com/uc?id=10Fg2e97yws7ss5LJOkPz9G_bOfCL3hui';
+    images[8] = 'https://drive.google.com/uc?id=1kR9FiRfyXfohELtRmNXXzc9V4zzsUQOo';
+
+    //Change image
+    function changeImg() {
+      document.slide.src = images[i];
+
+      if (i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+
+      setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+
+
+  </script>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
